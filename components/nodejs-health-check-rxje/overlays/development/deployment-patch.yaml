@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-rxje
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/rhtap-demo-qadp-tenant/e2e-nodejs/nodejs-health-check-rxje@sha256:23ba3adc44ffc75d9df7ac1e528b4d6efd71de933fd024b5670257ec01619f81
+        name: my-nodejs
+        resources: {}
+status: {}
